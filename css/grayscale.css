@@ -174,7 +174,6 @@
 
 .giveaway-section {
     padding-top: 10rem;
-    background: white
 }
 
 .giveaway-section p {
@@ -194,10 +193,6 @@
     text-transform: uppercase;
     letter-spacing: .15rem;
     border: 0;
-}
-
-.showcase-section {
-    padding: 10rem 0;
 }
 
 .showcase-section .featured-text {
@@ -249,7 +244,11 @@
 
 .contact-section {
     padding: 5rem 0 0;
-    background-color: #00274C;
+    background: linear-gradient(to top, rgba(22, 22, 22, 0.3) 0%, rgba(22, 22, 22, 0.7) 75%, #161616 100%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
 }
 
 .contact-section .card {
@@ -278,7 +277,7 @@
     text-align: center;
     height: 3rem;
     width: 3rem;
-    background: rgba(255, 255, 255, 0.1);
+    background: black;
     border-radius: 100%;
     line-height: 3rem;
     color: rgba(255, 255, 255, 0.3);
@@ -320,5 +319,9 @@ a:focus, a:hover {
 
 footer {
     padding: 2rem 0;
-    background-color: #00274C;
+    background: linear-gradient(to bottom, rgba(22, 22, 22, 0.3) 0%, rgba(22, 22, 22, 0.7) 75%, #161616 100%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
 }
