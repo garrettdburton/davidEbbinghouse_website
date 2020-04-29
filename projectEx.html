@@ -16,7 +16,9 @@
         <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
-
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <!-- Custom styles for this template -->
         <link href="css/grayscale.css" rel="stylesheet">
 
@@ -25,33 +27,88 @@
     </head>
 
     <body>
-        <!-- Header -->
-        <div class="row">
-            <h3 class="mx-auto">Jewerly Title</h3>
-        </div>
-        
-        
-        <!-- Item -->
-        <section>
-            <div class="container mt-3 mb-3">
-                <div class="row">
-                    <div class="col mr-auto">
-                        <img src="img/agatesEx.jpg">
-                    </div>
-                    <div class="col">
-                        <p> This is a test for the project overview</p>
-                    </div>
-                </div>
-            </div>   
-        </section>
+                    <!-- Navigation -->
+            
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="mainNav">
+                    <!-- <a class="navbar-brand js-scroll-trigger" href="#page-top">David Ebbinghouse</a> -->
+                    <a href="giveaway.html" class="btn-sm btn-primary js-scroll-trigger">Enter Our Giveaway!</a>
+                    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                        Menu
+                        <i class="fas fa-bars"></i>
+                    </button>
 
+                    <div class="collapse navbar-collapse" id="navbarResponsive">
 
-        <!-- Footer -->
-        <footer class="small text-center text-white-50">
-            <div class="container">
-                Copyright &copy; David Ebbinghouse
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link js-scroll-trigger" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link js-scroll-trigger" href="index.html#showcase">Showcase</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link js-scroll-trigger" href="index.html#contact">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link js-scroll-trigger" href="giveaway.html">Giveaway</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+        <div class="container-fluid">
+           
+            <div class="container mt-2 mb-3">
+                <div class="card mt-2 mb-3">
+                    <div class="row">
+                        <aside class="col-sm-5 border-right">
+                            <article class="gallery-wrap"> 
+                                <div class="img-big-wrap p-2">
+                                    <div><img class="card-img mx-auto"src="img/Agateshowcase.jpg"></div>
+                                </div>
+                                <div class="img-small-wrap">
+                                    <!-- <div class="item-gallery"> <img class="card-img" src="img/Crownflowershowcase.jpg"> </div> -->
+                                </div> 
+                            </article> 
+                        </aside>
+                        <aside class="col-sm-7">
+                            <article class="card-body p-5">
+                                <h3 class="title mb-3">Product Name</h3>
+
+                                <p class="price-detail-wrap"> 
+                                    <span class="price h3 text-warning"> 
+                                        <span class="currency">US $</span><span class="num">0000.00</span>
+                                    </span>
+                                </p> 
+                                <dl class="item-property">
+                                    <dt>Description</dt>
+                                    <dd><p>Here goes description consectetur adipisicing elit, sed do eiusmod
+                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                        quis nostrud exercitation ullamco </p></dd>
+                                </dl>
+                                <dl class="param param-feature">
+                                    <dt>Model#</dt>
+                                    <dd>123456</dd>
+                                </dl> 
+                                <dl class="param param-feature">
+                                    <dt>Color</dt>
+                                    <dd>Black and white</dd>
+                                </dl> 
+                                <dl class="param param-feature">
+                                    <dt>Delivery</dt>
+                                    <dd>USA</dd>
+                                </dl> 
+
+                                <hr>
+                                <hr>
+                                <a href="#" class="btn btn-lg btn-primary text-uppercase"> Buy now </a>
+                            </article> <!-- card-body.// -->
+                        </aside> <!-- col.// -->
+                    </div> <!-- row.// -->
+                </div> <!-- card.// -->
+
             </div>
-        </footer>
+        </div>
 
         <!-- Bootstrap core JavaScript -->
         <script src="vendor/jquery/jquery.min.js"></script>

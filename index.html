@@ -23,6 +23,172 @@
 
         <!-- favicon.ico -->
         <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+        <style>
+            .site-footer
+            {
+                background-color:#26272b;
+                padding:45px 0 20px;
+                font-size:15px;
+                line-height:24px;
+                color:#737373;
+            }
+            .site-footer hr
+            {
+                border-top-color:#bbb;
+                opacity:0.5
+            }
+            .site-footer hr.small
+            {
+                margin:20px 0
+            }
+            .site-footer h6
+            {
+                color:#fff;
+                font-size:16px;
+                text-transform:uppercase;
+                margin-top:5px;
+                letter-spacing:2px
+            }
+            .site-footer a
+            {
+                color:#737373;
+            }
+            .site-footer a:hover
+            {
+                color:#3366cc;
+                text-decoration:none;
+            }
+            .footer-links
+            {
+                padding-left:0;
+                list-style:none
+            }
+            .footer-links li
+            {
+                display:block
+            }
+            .footer-links a
+            {
+                color:#737373
+            }
+            .footer-links a:active,.footer-links a:focus,.footer-links a:hover
+            {
+                color:#3366cc;
+                text-decoration:none;
+            }
+            .footer-links.inline li
+            {
+                display:inline-block
+            }
+            .site-footer .social-icons
+            {
+                text-align:right
+            }
+            .site-footer .social-icons a
+            {
+                width:40px;
+                height:40px;
+                line-height:40px;
+                margin-left:6px;
+                margin-right:0;
+                border-radius:100%;
+                background-color:#33353d
+            }
+            .copyright-text
+            {
+                margin:0
+            }
+            @media (max-width:991px)
+            {
+                .site-footer [class^=col-]
+                {
+                    margin-bottom:30px
+                }
+            }
+            @media (max-width:767px)
+            {
+                .site-footer
+                {
+                    padding-bottom:0
+                }
+                .site-footer .copyright-text,.site-footer .social-icons
+                {
+                    text-align:center
+                }
+            }
+            .social-icons
+            {
+                padding-left:0;
+                margin-bottom:0;
+                list-style:none
+            }
+            .social-icons li
+            {
+                display:inline-block;
+                margin-bottom:4px
+            }
+            .social-icons li.title
+            {
+                margin-right:15px;
+                text-transform:uppercase;
+                color:#96a2b2;
+                font-weight:700;
+                font-size:13px
+            }
+            .social-icons a{
+                background-color:#eceeef;
+                color:#818a91;
+                font-size:16px;
+                display:inline-block;
+                line-height:44px;
+                width:44px;
+                height:44px;
+                text-align:center;
+                margin-right:8px;
+                border-radius:100%;
+                -webkit-transition:all .2s linear;
+                -o-transition:all .2s linear;
+                transition:all .2s linear
+            }
+            .social-icons a:active,.social-icons a:focus,.social-icons a:hover
+            {
+                color:#fff;
+                background-color:#29aafe
+            }
+            .social-icons.size-sm a
+            {
+                line-height:34px;
+                height:34px;
+                width:34px;
+                font-size:14px
+            }
+            .social-icons a.facebook:hover
+            {
+                background-color:#3b5998
+            }
+            .social-icons a.twitter:hover
+            {
+                background-color:#00aced
+            }
+            .social-icons a.linkedin:hover
+            {
+                background-color:#007bb6
+            }
+            .social-icons a.dribbble:hover
+            {
+                background-color:#ea4c89
+            }
+            @media (max-width:767px)
+            {
+                .social-icons li.title
+                {
+                    display:block;
+                    margin-right:0;
+                    font-weight:600
+                }
+            }
+        </style>
     </head>
 
     <body id="page-top">
@@ -41,7 +207,7 @@
 
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+                            <a class="nav-link js-scroll-trigger" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link js-scroll-trigger" href="#showcase">Showcase</a>
@@ -59,13 +225,7 @@
 
         <!-- Header -->
         <header class="masthead">
-            <div class="container d-flex h-100 align-items-center">
-                <div class="mx-auto text-center">
-                    <h1 class="mx-auto my-0 text-uppercase">David</h1>
-                    <h1 class="mx-auto my-0 text-uppercase mb-5">Ebbinghouse</h1>
-
-                </div>
-            </div>
+         
         </header>
 
         <!-- About Section -->
@@ -85,7 +245,7 @@
         </section>
 
         <!-- Showcase Section -->
-        <section id="showcase" class="showcase-section bg-black p-3">
+        <section class="showcase-section bg-black p-3" id="showcase">
             <div class="container">
                 <div class="row">
                     <h2 class="mx-auto text-white mb-5">Projects</h2>
@@ -168,21 +328,21 @@
                 </div>
                 <div class="row ml-auto">
                     <div class="card-deck mx-auto col-md-4">
-                        
+
                         <div class="card mx-auto">
                             <img src="img/Antiquebeadnecklaceshowcase.jpg" class="card-img-top" alt="Img 2">
                             <div class="card-body">
                                 <h5 class="card-title">Antique Bead Necklaces</h5>
                             </div>
                         </div>
-                       
+
                     </div>               
                 </div> 
             </div>
         </section>
 
         <!-- Contact Section -->
-        <section class="contact-section">
+        <section class="contact-section p-3" id="contact">
             <div class="container">
 
                 <div class="row">
@@ -223,27 +383,58 @@
                     </div>
                 </div>
 
-                <div class="social d-flex justify-content-center">
-                    <a href="https://www.davidebb.wixsite.com/davidebbinghouse" class="mx-2">
-                        <i class="fab fa-wix"></i>
-                    </a>
-                    <a href="https://www.etsy.com/shop/davidebbinghouse" class="mx-2">
-                        <i class="fab fa-etsy"></i>
-                    </a>
-                    <a href="https://www.instagram.com/davidebbinghousefinejewelry" class="mx-2">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                </div>
-
             </div>
         </section>
-
-        <!-- Footer -->
-        <footer class="small text-center text-white-50">
+        <!-- Site footer -->
+        <footer class="site-footer p-3">
             <div class="container">
-                Copyright &copy; David Ebbinghouse
+                <div class="row">
+                    <div class="col-sm-12 col-md-6">
+                        <h6>About</h6>
+                        <p class="text-justify">Lorem<i>ipsum dolor</i>sit amet, consectetur adipiscing elit. Phasellus ullamcorper, lorem ac tempor commodo, tellus turpis pulvinar ligula, at cursus eros orci a arcu. Aenean libero dui, dignissim rhoncus magna fringilla, finibus laoreet risus. Praesent sodales erat eu mi venenatis, et hendrerit massa eleifend. Proin dignissim vitae dolor vel tincidunt. Maecenas ac urna nec erat varius luctus ac et neque. Integer et rhoncus lorem, commodo vehicula magna. Nulla tempor nec urna nec suscipit.</p>
+                    </div>
+
+                    <div class="col-xs-6 col-md-3">
+                        <h6>Categories</h6>
+                        <ul class="footer-links">
+                            <li><a href="">Necklaces</a></li>
+                            <li><a href="">OR</a></li>
+                            <li><a href="">Others</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-xs-6 col-md-3">
+                        <h6>Quick Links</h6>
+                        <ul class="footer-links">
+                            <li><a href="">About Us</a></li>
+                            <li><a href="">Contact Us</a></li>
+                            <li><a href="">Contribute</a></li>
+                            <li><a href="">Privacy Policy</a></li>
+                            <li><a href="">Sitemap</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-sm-6 col-xs-12">
+                        <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by 
+                            <a href="#">Unshifted Bit Development</a>.
+                        </p>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <ul class="social-icons">
+                            <li><a class="instagram" href="https://www.instagram.com/davidebbinghousefinejewelry"><i class="fab fa-instagram"></i></a></li>
+                            <li><a class="etsy" href="https://www.etsy.com/shop/davidebbinghouse"><i class="fab fa-etsy"></i></a></li>
+                            <li><a class="wix" href="https://www.davidebb.wixsite.com/davidebbinghouse"><i class="fab fa-wix"></i></a></li> 
+                        </ul>
+                    </div>
+                </div>
             </div>
         </footer>
+
 
         <!-- Bootstrap core JavaScript -->
         <script src="vendor/jquery/jquery.min.js"></script>
