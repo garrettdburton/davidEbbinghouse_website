@@ -117,7 +117,7 @@
     width: 100%;
     height: auto;
     min-height: 25rem;
-    padding: 5rem 0rem;
+    padding: 4rem 0rem;
     background: linear-gradient(to bottom, rgba(22, 22, 22, 0.3) 0%, rgba(22, 22, 22, 0.7) 75%, #161616 100%), url("../img/bg-masthead.jpg");
     background-position: center;
     background-repeat: no-repeat;
