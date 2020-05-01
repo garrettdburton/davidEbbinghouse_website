@@ -244,11 +244,6 @@
 
 .contact-section {
     padding: 5rem 0 0;
-    background: linear-gradient(to top, rgba(22, 22, 22, 0.3) 0%, rgba(22, 22, 22, 0.7) 75%, #161616 100%);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-size: cover;
 }
 
 .contact-section .card {
@@ -264,7 +259,7 @@
 }
 
 .contact-section .card hr {
-    border-color: #FFCB05;
+    border-color: #64a19d;
     border-width: 0.25rem;
     width: 3rem;
 }
