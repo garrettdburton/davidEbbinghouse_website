@@ -34,13 +34,10 @@
                 background-size: cover;
             }
 
-            #banner {
-                background-color: #d9d9d9;
-            }
         </style>
     </head>
 
-    <body id="page-top">
+    <body id="page-top" class="bg-black">
         <div class="row p-2" id="banner">
             <a href="html/giveaway.html" class="btn-sm btn-primary js-scroll-trigger mx-auto">Enter Our Giveaway!</a>
         </div>
@@ -49,7 +46,7 @@
 
             <div class="container">
 
-                
+
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i class="fas fa-bars"></i>
@@ -61,8 +58,22 @@
                         <li class="nav-item">
                             <a class="nav-link js-scroll-trigger" href="index.html#home">Home</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger" href="#showcase">Showcase</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Showcases
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="#">Agates</a>
+                                <a class="dropdown-item" href="#">Canelian</a>
+                                <a class="dropdown-item" href="#">Egypt</a>
+                                <a class="dropdown-item" href="#">Swat Valley</a>
+                                <a class="dropdown-item" href="#">Mesopotamia</a>
+                                <a class="dropdown-item" href="#">Peru</a>
+                                <a class="dropdown-item" href="/html/showcaseEx.html">Saharan</a>
+                                <a class="dropdown-item" href="#">Crown Flower</a>
+                                <a class="dropdown-item" href="#">Tairona</a>
+                                <a class="dropdown-item" href="#">Ancient Bead Necklaces</a>
+                            </div>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
@@ -76,43 +87,43 @@
         </nav>
 
 
-        <!-- About Section -->
-        <section id="home" class="about-section text-center">
-            <div class="container-fluid">
-                <div id="carousel" class="carousel slide mx-auto mt-3 mb-3" data-ride="carousel">
+        <!-- Banner Section -->
+        <section id="home" class="banner-section bg-black mt-1 mb-3 p-1 text-center">
+            <div class="container-fluid bg-black" style="height: 400px;">
+                <div id="carousel1" class="carousel bg-black slide mx-auto mt-1 mb-2" data-ride="carousel">
                     <ol class="carousel-indicators">
-                        <li data-target="#carousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#carousel" data-slide-to="1"></li>
-                        <li data-target="#carousel" data-slide-to="2"></li>
+                        <li data-target="#carousel1" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel1" data-slide-to="1"></li>
+                        <li data-target="#carousel1" data-slide-to="2"></li>
                     </ol>
-                    <div class="carousel-inner">
+                    <div class="carousel-inner bg-black" style="height: 350px;">
                         <div class="carousel-item active">
-                            <img src="img/Agateshowcase.jpg" class="card-img-top" alt="Img 1">
+                            <img src="img/Agateshowcase.jpg" class="card-img-top" alt="Img 1" style="height: 350px;">
                             <div class="carousel-caption d-none d-md-block">
                                 <h5>First slide label</h5>
                                 <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="img/Carnelianshowcase.jpg" class="card-img-top" alt="Img 2">
+                            <img src="img/Carnelianshowcase.jpg" class="card-img-top" alt="Img 2" style="height: 350px;">
                             <div class="carousel-caption d-none d-md-block">
                                 <h5>Second slide label</h5>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="img/Egyptshowcase.jpg" class="card-img-top" alt="Img 1">
+                            <img src="img/Egyptshowcase.jpg" class="card-img-top" alt="Img 1" style="height: 350px;">
                             <div class="carousel-caption d-none d-md-block">
                                 <h5>Third slide label</h5>
                                 <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
                             </div>
                         </div>
                     </div>
-                    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                    <a class="carousel-control-prev" href="#carousel1" role="button" data-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="sr-only">Previous</span>
                     </a>
-                    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                    <a class="carousel-control-next" href="#carousel1" role="button" data-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="sr-only">Next</span>
                     </a>
@@ -120,10 +131,43 @@
             </div>
         </section>
 
+        <!-- Middle Section -->
+        <section class="bg-black mt-1 mb-3 p-1 text-center">
+            <div class="container bg-black" style="height: 700px;">
+                <div class="row p-2">
+                    <div class="col-md-6">
+                        <div class="card bg-black">
+                            <h5 class="card-header text-white font-weight-bold text-monospace mr-auto">David's Process</h5>
+                            <div class="card-body">
+                                <p class="card-text text-white">David Ebbinghouse has traveled widely, especially in India and has collected ancient beads and conducted research on them. He has published bead research and given lectures to various bead societies around the country. All this he considers to be a subset of his artistic practice, rather than a separate activity, as he seeks to integrate all of his experiences into his work. This intention to create an art that is instrumental in living a life in modern times is the same impulse behind all of the world’s mythology throughout all time and history. In this way Ebbinghouse seeks to create an art that transcends the boundaries of how we normally think about art..</p>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="col-md-1"></div>
+                    <div class="col-md-5">
+                        <div id="carousel2" class="carousel bg-black slide mx-auto" data-ride="carousel">
+                            <div class="carousel-inner bg-black mx-auto" style="height: 500px;">
+                                <div class="carousel-item active">
+                                    <img src="img/carousel/model1.jpg" class="" alt="Img 1" style="height: 500px;">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/carousel/model2.jpg" class="" alt="Img 2" style="height: 500px;">
+
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/carousel/model3.jpg" class="" alt="Img 1" style="height: 500px;">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
         <!-- Showcase Section -->
         <section class="showcase-section bg-black p-3" id="showcase">
-
-
             <div class="row">
                 <h3 class="text-white">Necklace Collections</h3>
             </div>
@@ -215,110 +259,110 @@
             </div> 
         </section>
 
-    <!-- Site footer -->
-    <nav class="site-footer p-3">
-        <div class="container">
-            <div class="row contact-section p-3" id="contact">
+        <!-- Site footer -->
+        <nav class="site-footer p-3">
+            <div class="container">
+                <div class="row contact-section p-3" id="contact">
 
-                <div class="col-md-4 mb-3 mb-md-0">
-                    <div class="card py-4 h-100">
-                        <div class="card-body text-center">
-                            <i class="fas fa-map-marked-alt text-primary mb-2"></i>
-                            <h4 class="text-uppercase m-0">Location</h4>
-                            <hr class="my-4">
-                            <div class="small text-black-50">Bloomington, IN 47401</div>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card py-4 h-100">
+                            <div class="card-body text-center">
+                                <i class="fas fa-map-marked-alt text-primary mb-2"></i>
+                                <h4 class="text-uppercase m-0">Location</h4>
+                                <hr class="my-4">
+                                <div class="small text-black-50">Bloomington, IN 47401</div>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="col-md-4 mb-3 mb-md-0">
-                    <div class="card py-4 h-100">
-                        <div class="card-body text-center">
-                            <i class="fas fa-envelope text-primary mb-2"></i>
-                            <h4 class="text-uppercase m-0">Email</h4>
-                            <hr class="my-4">
-                            <div class="small text-black-50">
-                                <a href="#">davidebbinghousefinejewelry@gmail.com</a>
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card py-4 h-100">
+                            <div class="card-body text-center">
+                                <i class="fas fa-envelope text-primary mb-2"></i>
+                                <h4 class="text-uppercase m-0">Email</h4>
+                                <hr class="my-4">
+                                <div class="small text-black-50">
+                                    <a href="#">davidebbinghousefinejewelry@gmail.com</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 mb-3 mb-md-0">
+                        <div class="card py-4 h-100">
+                            <div class="card-body text-center">
+                                <i class="fas fa-mobile-alt text-primary mb-2"></i>
+                                <h4 class="text-uppercase m-0">Phone</h4>
+                                <hr class="my-4">
+                                <div class="small text-black-50">(812)-606-0178</div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-6">
+                        <h6>About</h6>
+                        <p class="text-justify">David Ebbinghouse has traveled widely, especially in India and has collected ancient beads and conducted research on them.  He has published bead research and given lectures to various bead societies around the country. All this he considers to be a subset of his artistic practice, rather than a separate activity, as he seeks to integrate all of his experiences into his work.  This intention to create an art that is instrumental in living a life in modern times is the same impulse behind all of the world’s mythology throughout all time and history.  In this way Ebbinghouse seeks to create an art that transcends the boundaries of how we normally think about art..</p>
+                    </div>
 
-                <div class="col-md-4 mb-3 mb-md-0">
-                    <div class="card py-4 h-100">
-                        <div class="card-body text-center">
-                            <i class="fas fa-mobile-alt text-primary mb-2"></i>
-                            <h4 class="text-uppercase m-0">Phone</h4>
-                            <hr class="my-4">
-                            <div class="small text-black-50">(812)-606-0178</div>
-                        </div>
+                    <div class="col-xs-6 col-md-3">
+                        <h6>Categories</h6>
+                        <ul class="footer-links">
+                            <li><a href="">Agates</a></li>
+                            <li><a href="">Canelian</a></li>
+                            <li><a href="">Egypt</a></li>
+                            <li><a href="">Swat Valley</a></li>
+                            <li><a href="">Mesopotamia</a></li>
+                            <li><a href="">Peru</a></li>
+                            <li><a href="">Saharan</a></li>
+                            <li><a href="">Crown Flower</a></li>
+                            <li><a href="">Tairona</a></li>
+                            <li><a href="">Antique Bead Necklace</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-xs-6 col-md-3">
+                        <h6>Quick Links</h6>
+                        <ul class="footer-links">
+                            <li><a href="">About Us</a></li>
+                            <li><a href="">Contact Us</a></li>
+                            <li><a href="">Contribute</a></li>
+                            <li><a href="">Privacy Policy</a></li>
+                            <li><a href="">Sitemap</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-sm-6 col-xs-12">
+                        <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by 
+                            <a href="#">Unshifted Bit Development</a>.
+                        </p>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <ul class="social-icons">
+                            <li><a class="instagram" href="https://www.instagram.com/davidebbinghousefinejewelry"><i class="fab fa-instagram"></i></a></li>
+                            <li><a class="etsy" href="https://www.etsy.com/shop/davidebbinghouse"><i class="fab fa-etsy"></i></a></li>
+                            <li><a class="wix" href="https://www.davidebb.wixsite.com/davidebbinghouse"><i class="fab fa-wix"></i></a></li> 
+                        </ul>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-sm-12 col-md-6">
-                    <h6>About</h6>
-                    <p class="text-justify">David Ebbinghouse has traveled widely, especially in India and has collected ancient beads and conducted research on them.  He has published bead research and given lectures to various bead societies around the country. All this he considers to be a subset of his artistic practice, rather than a separate activity, as he seeks to integrate all of his experiences into his work.  This intention to create an art that is instrumental in living a life in modern times is the same impulse behind all of the world’s mythology throughout all time and history.  In this way Ebbinghouse seeks to create an art that transcends the boundaries of how we normally think about art..</p>
-                </div>
-
-                <div class="col-xs-6 col-md-3">
-                    <h6>Categories</h6>
-                    <ul class="footer-links">
-                        <li><a href="">Agates</a></li>
-                        <li><a href="">Canelian</a></li>
-                        <li><a href="">Egypt</a></li>
-                        <li><a href="">Swat Valley</a></li>
-                        <li><a href="">Mesopotamia</a></li>
-                        <li><a href="">Peru</a></li>
-                        <li><a href="">Saharan</a></li>
-                        <li><a href="">Crown Flower</a></li>
-                        <li><a href="">Tairona</a></li>
-                        <li><a href="">Antique Bead Necklace</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-xs-6 col-md-3">
-                    <h6>Quick Links</h6>
-                    <ul class="footer-links">
-                        <li><a href="">About Us</a></li>
-                        <li><a href="">Contact Us</a></li>
-                        <li><a href="">Contribute</a></li>
-                        <li><a href="">Privacy Policy</a></li>
-                        <li><a href="">Sitemap</a></li>
-                    </ul>
-                </div>
-            </div>
-            <hr>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 col-sm-6 col-xs-12">
-                    <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by 
-                        <a href="#">Unshifted Bit Development</a>.
-                    </p>
-                </div>
-
-                <div class="col-md-4 col-sm-6 col-xs-12">
-                    <ul class="social-icons">
-                        <li><a class="instagram" href="https://www.instagram.com/davidebbinghousefinejewelry"><i class="fab fa-instagram"></i></a></li>
-                        <li><a class="etsy" href="https://www.etsy.com/shop/davidebbinghouse"><i class="fab fa-etsy"></i></a></li>
-                        <li><a class="wix" href="https://www.davidebb.wixsite.com/davidebbinghouse"><i class="fab fa-wix"></i></a></li> 
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </nav>
+        </nav>
 
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <!-- Bootstrap core JavaScript -->
+        <script src="vendor/jquery/jquery.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+        <!-- Plugin JavaScript -->
+        <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-    <!-- Custom scripts for this template -->
-    <script src="js/grayscale.min.js"></script>
+        <!-- Custom scripts for this template -->
+        <script src="js/grayscale.min.js"></script>
 
     </body>
 
