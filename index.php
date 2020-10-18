@@ -1,9 +1,26 @@
+<?php
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "inventory";
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+} 
 
+
+// Show necklaces with a SKU of Swat Valley
+$sql = "SELECT * FROM necklaces WHERE SKU LIKE 'A-%'";
+$result = mysqli_query($conn, $sql); // First parameter is just return of "mysqli_connect()" function
+$conn->close();
+?>
 
 <!DOCTYPE HTML>
 <html lang="en-US">
     <head>
-        <title>Fine Jewelry | Home</title>
+        <title>Fine Jewelry</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="description" content="Template by Dry Themes" />
         <meta name="keywords" content="HTML, CSS, JavaScript, PHP" />
@@ -21,9 +38,9 @@
         <link rel="stylesheet" type="text/css"  href='style.css' />
 
         <!--[if lt IE 9]>
-                <script src="js/html5shiv.js"></script>                
-                <script src="js/respond.min.js"></script>                
-        <![endif]-->
+<script src="js/html5shiv.js"></script>                
+<script src="js/respond.min.js"></script>                
+<![endif]-->
 
     </head>
     <body class="page">
@@ -70,7 +87,7 @@
                                     <li>
                                         <a href="#portfolio">Showcase</a>
                                     </li>
-                                   
+
                                 </ul>
                             </li>
                             <li>
@@ -81,7 +98,7 @@
                             </li>    
                             <li>
                                 <a href="contact.html">Contact</a>
-                               
+
                             </li>
                         </ul>
                     </nav>
@@ -99,7 +116,7 @@
                 <article>
                     <div class="content-1330 center-relative">
                         <div class="page-desc">
-                             David Ebbinghouse has traveled widely, especially in India and has collected ancient beads and conducted research on them. He has published bead research and given lectures to various bead societies around the country. All this he considers to be a subset of his artistic practice, rather than a separate activity, as he seeks to integrate all of his experiences into his work. This intention to create an art that is instrumental in living a life in modern times is the same impulse behind all of the world’s mythology throughout all time and history. In this way Ebbinghouse seeks to create an art that transcends the boundaries of how we normally think about art.
+                            David Ebbinghouse has traveled widely, especially in India and has collected ancient beads and conducted research on them. He has published bead research and given lectures to various bead societies around the country. All this he considers to be a subset of his artistic practice, rather than a separate activity, as he seeks to integrate all of his experiences into his work. This intention to create an art that is instrumental in living a life in modern times is the same impulse behind all of the world’s mythology throughout all time and history. In this way Ebbinghouse seeks to create an art that transcends the boundaries of how we normally think about art.
                         </div>
                         <div class="clear"></div>
                         <p>&nbsp;</p>
@@ -118,14 +135,26 @@
                         <div class="grid" id="portfolio">
                             <div class="grid-sizer"></div>
                             <div class="grid-item element-item p_one_third post">
-                                <a href="single-portfolio.html">
-                                    <img src="demo-images/sun_portfolio_image01.png" alt="">
-                                    <div class="portfolio-text-holder">
-                                        <p>CLOCK</p>
-                                    </div>
-                                </a>
+
+                                <?php echo '<a href="single-portfolio.html">';?> 
+                                <img src="demo-images/sun_portfolio_image01.png" class="card-img-top" alt="">
+                                <div class="portfolio-text-holder">
+                                    <p>AGATES</p>
+                                </div>
+                                <?php echo '</a>';?>
+
+
+
+                                <!--
+<a href="single-portfolio.html">
+<img src="demo-images/sun_portfolio_image01.png" alt="">
+<div class="portfolio-text-holder">
+<p>CLOCK</p>
+</div>
+</a>
+-->
                             </div>
-                            
+
                             <div class="grid-item element-item p_one_third image">
                                 <a href="demo-images/sun_portfolio_image03.png" data-rel="prettyPhoto[gallery1]">
                                     <img src="demo-images/sun_portfolio_image03.png" alt="">
@@ -134,7 +163,7 @@
                                     </div>
                                 </a>
                             </div>
-                            
+
                             <div class="grid-item element-item p_one_third post">
                                 <a href="single-portfolio.html">
                                     <img src="demo-images/sun_portfolio_image04.png" alt="">
@@ -143,7 +172,7 @@
                                     </div>
                                 </a>
                             </div>
-                            
+
                             <div class="grid-item element-item p_one_third video">
                                 <a href="https://www.youtube.com/watch?v=xEW_YXgRSIE" data-rel="prettyPhoto[gallery1]">
                                     <img src="demo-images/sun_portfolio_image02.png" alt="">
@@ -152,7 +181,7 @@
                                     </div>
                                 </a>
                             </div>
-                            
+
                             <div class="grid-item element-item p_one_third extern">
                                 <a href="http://drythemes.com" target="_blank">
                                     <img src="demo-images/sun_portfolio_image05.png" alt="">
@@ -161,7 +190,7 @@
                                     </div>
                                 </a>
                             </div>
-                            
+
                             <div class="grid-item element-item p_one_third post">
                                 <a href="single-portfolio.html">
                                     <img src="demo-images/sun_portfolio_image07.png" alt="">
@@ -183,9 +212,9 @@
                         </div>
                         <div class="one_half last">
                             <p>
-                                <strong>Like What You See?</strong>
+                                <strong>Insert Text</strong>
                                 <br>
-                                There's more
+                                Insert Text
                             </p>
                             <p>&nbsp;</p>                            
                             <div class="text-left">
@@ -215,7 +244,7 @@
                             <a href="https://www.etsy.com/shop/davidebbinghouse">Etsy</a>
                         </li>
                         <li class="left-footer-content mobile">
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved by <a href="https://unshiftedbitdev.com" target="_blank">Unshifted Bit Development</a>
+                            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved by <a href="https://unshiftedbitdev.com" target="_blank">Unshifted Bit Development</a>
                         </li>
                     </ul>
                 </div>
