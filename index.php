@@ -2,7 +2,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$dbname = "inventory";
+$dbname = "productList";
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
 // Check connection
@@ -12,22 +12,21 @@ if ($conn->connect_error) {
 
 
 // Show necklaces with a SKU of Swat Valley
-$sql = "SELECT * FROM necklaces WHERE SKU LIKE 'A-%'";
+$sql = "SELECT * FROM products WHERE SKU LIKE 'A-%'";
 $result = mysqli_query($conn, $sql); // First parameter is just return of "mysqli_connect()" function
 $conn->close();
 ?>
-
 <!DOCTYPE HTML>
 <html lang="en-US">
     <head>
-        <title>Fine Jewelry</title>
+        <title>Fine Jewelry | Home</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="description" content="Template by Dry Themes" />
         <meta name="keywords" content="HTML, CSS, JavaScript, PHP" />
         <meta name="author" content="DryThemes" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-       <link rel="shortcut icon" href="images/favicon.jpeg" />   
+        <link rel="shortcut icon" href="images/favicon.jpeg" />    
         <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700%7CPT+Serif:400,700' rel='stylesheet' type='text/css'>		
         <link rel="stylesheet" type="text/css"  href='css/clear.css' />
         <link rel="stylesheet" type="text/css"  href='css/common.css' />
@@ -85,7 +84,7 @@ $conn->close();
                                 <a href="index.html">Home</a>
                                 <ul class="sub-menu">
                                     <li>
-                                        <a href="#portfolio">Showcase</a>
+                                        <a href="#portfolio">Shop</a>
                                     </li>
 
                                 </ul>
@@ -94,8 +93,14 @@ $conn->close();
                                 <a href="about.html">About</a>
                             </li>
                             <li>
-                                <a href="portfolio.html">Portfolio</a>
+                                <a href="collections.html">Collections</a>
                             </li>    
+                            <li>
+                                <a href="https://www.instagram.com/davidebbinghousefinejewelry/">Instagram</a> 
+                            </li>
+                            <li>
+                                <a href="https://www.etsy.com/shop/davidebbinghouse">Etsy</a>
+                            </li>
                             <li>
                                 <a href="contact.html">Contact</a>
 
@@ -116,86 +121,82 @@ $conn->close();
                 <article>
                     <div class="content-1330 center-relative">
                         <div class="page-desc">
-                            David Ebbinghouse has traveled widely, especially in India and has collected ancient beads and conducted research on them. He has published bead research and given lectures to various bead societies around the country. All this he considers to be a subset of his artistic practice, rather than a separate activity, as he seeks to integrate all of his experiences into his work. This intention to create an art that is instrumental in living a life in modern times is the same impulse behind all of the world’s mythology throughout all time and history. In this way Ebbinghouse seeks to create an art that transcends the boundaries of how we normally think about art.
+                            We design jewelry utilizing beads that were made in the distant past. Some people collect ancient beads as objects to be treaured and admired; we collect ancient beads to fulfill their ancient purpose which is to adorn the human body. Wearing one of our necklaces connects one physically to the ancient past. The time and care that was exercised by our forebearers in the manufacture of their beads have left us with a legacy that can find expression as contemporary jewelry. We feel that beads that were so carefully made from such a permanent material as stone deserve to be reincarnated and given a new life in the present. We design gold and silver beads and make them using techniques first developed in the early Bronze Age. In this way, we respect and honor the contributions made by ancient craftsmen in the design of beaded jewelry.
                         </div>
                         <div class="clear"></div>
                         <p>&nbsp;</p>
                         <p>&nbsp;</p>
                         <div class="button-group filters-button-group">
                             <div class="button is-checked" data-filter="*">All</div>
-                            <div class="button" data-filter=".post">Agates</div>
-                            <div class="button" data-filter=".image">Carnelian</div>
-                            <div class="button" data-filter=".video">Egypt</div>
-                            <div class="button" data-filter=".extern">Swat Valley</div> 
-                            <div class="button" data-filter=".post">Mesopotamia</div>
-                            <div class="button" data-filter=".image">Peru</div>
-                            <div class="button" data-filter=".video">Saharan</div>
+                            <div class="button" data-filter=".agates">Agates</div>
+                            <div class="button" data-filter=".carnelian">Carnelian</div>
+                            <div class="button" data-filter=".egypt">Egypt</div>
+                            <div class="button" data-filter=".swat">Swat Valley</div> 
+                            <div class="button" data-filter=".mesopotamia">Mesopotamia</div>
+                            <div class="button" data-filter=".peru">Peru</div>
+                            <div class="button" data-filter=".saharan">Saharan</div>
                         </div>
                         <!--Images-->
                         <div class="grid" id="portfolio">
                             <div class="grid-sizer"></div>
-                            <div class="grid-item element-item p_one_third post">
-
-                                <?php echo '<a href="single-portfolio.html">';?> 
-                                <img src="demo-images/sun_portfolio_image01.png" class="card-img-top" alt="">
+                            <div class="grid-item element-item p_one_third agates">
+                                <?php echo '<a href="collections.php?collection=A">';?> 
+                                <img src="demo-images/A_showcase.jpg" alt="">
                                 <div class="portfolio-text-holder">
-                                    <p>AGATES</p>
+                                    <p>Agates</p>
                                 </div>
                                 <?php echo '</a>';?>
-
-
-
-                                <!--
-<a href="single-portfolio.html">
-<img src="demo-images/sun_portfolio_image01.png" alt="">
-<div class="portfolio-text-holder">
-<p>CLOCK</p>
-</div>
-</a>
--->
                             </div>
 
-                            <div class="grid-item element-item p_one_third image">
-                                <a href="demo-images/sun_portfolio_image03.png" data-rel="prettyPhoto[gallery1]">
-                                    <img src="demo-images/sun_portfolio_image03.png" alt="">
+                            <div class="grid-item element-item p_one_third carnelian">
+                                <a href="collections.html">
+                                    <img src="demo-images/C_showcase.jpg" alt="">
                                     <div class="portfolio-text-holder">
-                                        <p>BAG</p>
+                                        <p>Carnelian</p>
                                     </div>
                                 </a>
                             </div>
 
-                            <div class="grid-item element-item p_one_third post">
-                                <a href="single-portfolio.html">
-                                    <img src="demo-images/sun_portfolio_image04.png" alt="">
+                            <div class="grid-item element-item p_one_third egypt">
+                                <a href="collections.html">
+                                    <img src="demo-images/E_showcase.jpg" alt="">
                                     <div class="portfolio-text-holder">
-                                        <p>FISH</p>
+                                        <p>Egypt</p>
                                     </div>
                                 </a>
                             </div>
 
-                            <div class="grid-item element-item p_one_third video">
-                                <a href="https://www.youtube.com/watch?v=xEW_YXgRSIE" data-rel="prettyPhoto[gallery1]">
-                                    <img src="demo-images/sun_portfolio_image02.png" alt="">
+                            <div class="grid-item element-item p_one_third swat">
+                                <a href="collections.html">
+                                    <img src="demo-images/SW_showcase.jpg" alt="">
                                     <div class="portfolio-text-holder">
-                                        <p>BOTTLE</p>
+                                        <p>Swat Valley</p>
                                     </div>
                                 </a>
                             </div>
 
-                            <div class="grid-item element-item p_one_third extern">
-                                <a href="http://drythemes.com" target="_blank">
-                                    <img src="demo-images/sun_portfolio_image05.png" alt="">
+                            <div class="grid-item element-item p_one_third mesopotamia">
+                                <a href="collections.html">
+                                    <img src="demo-images/M_showcase.jpg" alt="">
                                     <div class="portfolio-text-holder">
-                                        <p>PAPER</p>
+                                        <p>Mesopotamia</p>
                                     </div>
                                 </a>
                             </div>
 
-                            <div class="grid-item element-item p_one_third post">
-                                <a href="single-portfolio.html">
-                                    <img src="demo-images/sun_portfolio_image07.png" alt="">
+                            <div class="grid-item element-item p_one_third peru">
+                                <a href="collections.html">
+                                    <img src="demo-images/P_showcase.jpg" alt="">
                                     <div class="portfolio-text-holder">
-                                        <p>BLUE ICE</p>
+                                        <p>Peru</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="grid-item element-item p_one_third saharan">
+                                <a href="collections.html">
+                                    <img src="demo-images/S_showcase.jpg" alt="">
+                                    <div class="portfolio-text-holder">
+                                        <p>Saharan</p>
                                     </div>
                                 </a>
                             </div>
@@ -203,18 +204,44 @@ $conn->close();
                         <div class="clear"></div>
                         <p>&nbsp;</p>
                         <p>&nbsp;</p>
+                        <div class="content-1530 center-relative block">
+                            <script>
+                                var slider1_speed = "500";
+                                var slider1_auto = "true";
+                                var slider1_pagination = "true";
+                                var slider1_hover = "true";
+                            </script>
+                            <div class="image-slider-wrapper">
+                                <ul id="slider1" class="image-slider slides center-text">
+                                    <li>
+                                        <img src="demo-images/home_img_02.jpg" alt="">
+                                    </li>
+                                    <li>
+                                        <img src="demo-images/home_img_03.jpg" alt="">
+                                    </li>
+                                    <li>
+                                        <img src="demo-images/home_img_01.jpg" alt="">
+                                    </li>
+                                </ul>                        
+                                <div class="slider1_pagination carousel_pagination left"></div>
+                            </div>
+                            <div class="clear"></div>                                                
+                        </div>
+                        <p>&nbsp;</p>
+                        <p>&nbsp;</p>
                         <div class="one_half">
                             <p>
-                                <strong>The Story</strong>
+                                <strong>A Message From David</strong>
                                 <br>
-                                David Ebbinghouse has traveled widely, especially in India and has collected ancient beads and conducted research on them. He has published bead research and given lectures to various bead societies around the country. All this he considers to be a subset of his artistic practice, rather than a separate activity, as he seeks to integrate all of his experiences into his work. This intention to create an art that is instrumental in living a life in modern times is the same impulse behind all of the world’s mythology throughout all time and history. In this way Ebbinghouse seeks to create an art that transcends the boundaries of how we normally think about art.
+                                I love collecting and wearing ancient beads. One of the oldest art forms, wearing beads is one of the characteristics of being human. While we love the sculptural forms of the ancient stone beads and admire their longevity, surviving over thousands of years, let us not forget that they were literally made to be worn. Their rightful context is on the human body, and the sense of connectedness with both the earth and past human cultures can only be experienced by wearing the beads. They are a pleasure to behold on another person and convey something about that person to us, but it is when you wear them yourself that you have a deeper understanding of this most ancient art form.
+                                With this in mind, I have turned all my skills as an artist to making collections of beads that return them to their rightful contexts and ennoble and recreate the splendor and magic of the past. For me, designing necklaces is a collaboration with those ancient artists that created such magnificent beads and a message sent into the future.
                             </p>
                         </div>
                         <div class="one_half last">
                             <p>
-                                <strong>Insert Text</strong>
+                                <strong>Like What You See?</strong>
                                 <br>
-                                Insert Text
+                                There's more
                             </p>
                             <p>&nbsp;</p>                            
                             <div class="text-left">
