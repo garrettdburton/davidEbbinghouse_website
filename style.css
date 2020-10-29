@@ -175,8 +175,9 @@ input, textarea, select
 
 .content-1370 img, .content-1430 img, .content-1530 img
 {
-    max-width: 50%;
-    max-height: 50%;
+    max-width: 70%;
+    max-height: 70%;
+    overflow-y: hidden;
     width: auto;
     height: auto;
 }
